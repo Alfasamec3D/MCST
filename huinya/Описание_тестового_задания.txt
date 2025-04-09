@@ -1,0 +1,15 @@
+Для выполнения задания вам потребуется операционная система Linux.
+Если вы уже используете её, то отлично. Если у вас система Windows, то есть два варианта.
+
+* WSL1 - Гайд https://learn.microsoft.com/ru-ru/windows/wsl/install (в качестве дистрибутива выбирайте Ubuntu https://apps.microsoft.com/detail/9pdxgncfsczv?hl=ru-RU&gl=RU)
+* VirtualBox (https://www.virtualbox.org/wiki/Downloads) - Гайд https://ru.wikihow.com/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-Ubuntu-%D0%B2-VirtualBox
+
+После установки Ubuntu одним из выбранных способов откройте терминал и установите пакеты gcc и make
+Команда: sudo apt-get install make gcc
+
+Скопируйте полученные от куратора файлы pre_intership.c и Makefile в вашу Linux систему.
+Скомпилируйте программу с помощью make (Статья https://habr.com/ru/articles/211751/)
+Запустите скомпилированную программу ./pre_intership
+
+Результат работы программы пришлите куратору из МЦСТ.
+В письме опишите с какими трудностями вы столкнулись при выполнении задания и как их решили.
