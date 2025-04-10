@@ -1,0 +1,18 @@
+Start testing: Apr 10 22:36 MSK
+----------------------------------------------------------
+1/1 Testing: Test
+1/1 Test: Test
+Command: "/mnt/9C468886468862BE/media/programs/MCST/9/build/test_alg"
+Directory: /mnt/9C468886468862BE/media/programs/MCST/9/build
+"Test" start time: Apr 10 22:36 MSK
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Test" end time: Apr 10 22:36 MSK
+"Test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Apr 10 22:36 MSK

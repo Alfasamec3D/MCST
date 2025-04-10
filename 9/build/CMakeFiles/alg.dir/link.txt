@@ -1,0 +1,2 @@
+/usr/bin/ar qc libalg.a CMakeFiles/alg.dir/src/alg.cpp.o
+/usr/bin/ranlib libalg.a
