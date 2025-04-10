@@ -1,9 +1,9 @@
 #ifndef ALG_HPP
 #define ALG_HPP
 #include <utility>
-#include<vector>
+#include <vector>
 // Функция, принимающая на вход массив чисел и отдающая пару индексов: индекс
-// 1-шл элемента искомой последовательности и индекс последнего, к которому
+// 1-го элемента искомой последовательности и индекс последнего, к которому
 // прибавлена 1
 template <class T>
 std::pair<int, int> alg(std::vector<T> numbers) {

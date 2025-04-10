@@ -1,5 +1,6 @@
+#include <iostream>
+
 #include "alg.hpp"
-#include<iostream>
 int main() {
   size_t N{};
   std::cout << "Input the size of the arrray: ";
@@ -13,9 +14,8 @@ int main() {
   std::cout << std::endl
             << "The desired sequence is from " << edges.first << " to "
             << edges.second - 1 << " element: ";
-  for (int i = edges.first; i < edges.second;++i)
-  {
-    std::cout << numbers[i]<<' ';
+  for (int i = edges.first; i < edges.second; ++i) {
+    std::cout << numbers[i] << ' ';
   }
   return 1;
 }
