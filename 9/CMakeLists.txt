@@ -1,0 +1,7 @@
+CMake_minimum_required(VERSION 3.13)
+project(alg)
+enable_testing()
+add_executable(main main.cpp)
+add_library(alg include/alg.cpp)
+target_include_directories(alg PUBLIC "include")
+target_link_libraries(main alg)
