@@ -44,6 +44,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/alg.dir/DependInfo.cmake"
   "CMakeFiles/test_alg.dir/DependInfo.cmake"
+  "CMakeFiles/ui.dir/DependInfo.cmake"
   )

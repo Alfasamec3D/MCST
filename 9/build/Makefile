@@ -127,19 +127,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named alg
-
-# Build rule for target.
-alg: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 alg
-.PHONY : alg
-
-# fast build rule for target.
-alg/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/alg.dir/build.make CMakeFiles/alg.dir/build
-.PHONY : alg/fast
-
-#=============================================================================
 # Target rules for targets named test_alg
 
 # Build rule for target.
@@ -152,29 +139,18 @@ test_alg/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_alg.dir/build.make CMakeFiles/test_alg.dir/build
 .PHONY : test_alg/fast
 
-src/alg.o: src/alg.cpp.o
-.PHONY : src/alg.o
+#=============================================================================
+# Target rules for targets named ui
 
-# target to build an object file
-src/alg.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/alg.dir/build.make CMakeFiles/alg.dir/src/alg.cpp.o
-.PHONY : src/alg.cpp.o
+# Build rule for target.
+ui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ui
+.PHONY : ui
 
-src/alg.i: src/alg.cpp.i
-.PHONY : src/alg.i
-
-# target to preprocess a source file
-src/alg.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/alg.dir/build.make CMakeFiles/alg.dir/src/alg.cpp.i
-.PHONY : src/alg.cpp.i
-
-src/alg.s: src/alg.cpp.s
-.PHONY : src/alg.s
-
-# target to generate assembly for a file
-src/alg.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/alg.dir/build.make CMakeFiles/alg.dir/src/alg.cpp.s
-.PHONY : src/alg.cpp.s
+# fast build rule for target.
+ui/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui.dir/build.make CMakeFiles/ui.dir/build
+.PHONY : ui/fast
 
 tests/test.o: tests/test.cpp.o
 .PHONY : tests/test.o
@@ -200,6 +176,30 @@ tests/test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_alg.dir/build.make CMakeFiles/test_alg.dir/tests/test.cpp.s
 .PHONY : tests/test.cpp.s
 
+ui.o: ui.cpp.o
+.PHONY : ui.o
+
+# target to build an object file
+ui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui.dir/build.make CMakeFiles/ui.dir/ui.cpp.o
+.PHONY : ui.cpp.o
+
+ui.i: ui.cpp.i
+.PHONY : ui.i
+
+# target to preprocess a source file
+ui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui.dir/build.make CMakeFiles/ui.dir/ui.cpp.i
+.PHONY : ui.cpp.i
+
+ui.s: ui.cpp.s
+.PHONY : ui.s
+
+# target to generate assembly for a file
+ui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui.dir/build.make CMakeFiles/ui.dir/ui.cpp.s
+.PHONY : ui.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -209,14 +209,14 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... alg"
 	@echo "... test_alg"
-	@echo "... src/alg.o"
-	@echo "... src/alg.i"
-	@echo "... src/alg.s"
+	@echo "... ui"
 	@echo "... tests/test.o"
 	@echo "... tests/test.i"
 	@echo "... tests/test.s"
+	@echo "... ui.o"
+	@echo "... ui.i"
+	@echo "... ui.s"
 .PHONY : help
 
 

@@ -1,1 +1,1 @@
-/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/test_alg.dir/tests/test.cpp.o -o test_alg  libalg.a 
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/test_alg.dir/tests/test.cpp.o -o test_alg 
